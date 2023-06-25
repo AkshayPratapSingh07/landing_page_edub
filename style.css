@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+    background-color: black;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color:aqua;
+    color: whitesmoke;
+    font-weight: bolder;
+    background-color: black;
+}
+nav ul{
+    list-style: none;
+    float: right;
+   
+}
+nav .logo{
+    font-size: 30px;
+    float: left;
+    line-height: 80px;
+    margin: 0px 50px;
+   
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+
+    padding: 6px 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.bt{
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+  
+    font-weight: bolder;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem aqua ;
+    transition: .5s ease;
+
+}
+.bt a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    color:whitesmoke;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    
+}
+.bt:hover{
+    box-shadow: none;
+}
+nav ul li a.active, a:hover{
+    transition: all .5s;
+    border-bottom: 3px solid aqua;
+    border-radius:20px;
+}
+.cont{
+    margin-left: 2%;
+    background-color: black;
+    width: 96%;
+    position:relative;
+    box-sizing: border-box;
+}
+.cont img{
+    height:80vh;
+    width: 60%;
+}
+.fbox2 p{
+    padding-top: 10px;
+}
+.content{
+    position: absolute;
+    font-weight: bolder;
+    box-sizing: border-box;
+    width: 40%;
+    margin-top: 100px;
+}
+.btn{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background:aqua;
+    font-weight: bolder;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem aqua ;
+    transition: .5s ease;
+}
+.btn a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    color:whitesmoke;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    
+}
+.btn:hover{
+    box-shadow: none;
+}
+.p1{
+    font-size: 50px;
+    color:rgb(52, 218, 218);
+}
+.p2{
+    font-size: 30px;
+}
+.p3{
+    font-size: 20px;
+   color: #808080;
+}
+.fouter{
+    height: 220px;
+    color: whitesmoke;
+    width: 100%;
+   
+}
+
+.fbox3{
+    height: 200px;
+    width: 30%;
+    float: left;
+}
+.fbox2{
+    height: 200px;
+    width: 30%;
+    float:left;
+}
+.fbox1{
+    height: 200px;
+    width: 35%;
+    float: left;
+    padding-left: 0;
+    margin-left: 4%;
+   
+   
+}
+.icon a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: aqua;
+    border: .2rem solid aqua;
+    border-radius:50%;
+    font-size: 2rem;
+    color: aqua;
+    margin: 2rem 1.5rem 3rem 0;
+}
+.icon a:hover{
+    background-color:black;
+    color: aqua;
+    border-radius:50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    box-shadow: 0 0 1rem aqua;
+}
+.fbox1 h3{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.para{
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+#check{
+    display: none;
+}
+#check:checked ~ 
+    ul{
+    left:0%;
+}
+
+#checkbtn{
+    line-height: 80px;
+    float: right;
+    display: none;
+    padding-right:20px ;
+}
+.fbox2{
+    text-align: left;
+    padding: 0px 50px;
+    font-size: 25px;
+
+}
+.Address{
+    text-align: center;
+    font-size: 35px;
+    padding: 15px 50px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.fbox3{
+    display:block;
+    text-align: center;
+    padding: 15px 20px;
+    background-color: wh;
+   
+}
+#btn1{
+    margin-top: 10px;
+    
+    letter-spacing: 2px;
+    font-size: 15px;
+   }
+.nl{
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+@media(max-width:810px){
+ 
+    
+    nav ul{
+        background-color: aquamarine;
+        width: 100%;
+        height: auto;
+        text-align:center;
+        position: fixed;
+        transition: all .5s;
+        top:80px;
+        left: -100%;
+       
+    }
+    nav ul li{
+        display: block;
+        line-height:68px;
+        margin: 10px;
+    }
+   
+    #checkbtn{
+        display: block;
+        
+    }
+    @media(max-width:900px)
+    {
+        .content{
+            margin-top:50px;
+        } 
+    @media(max-width:750px)
+    {
+        .content{
+            margin-top:20px;
+        } 
+    }
+    @media(max-width:320px){
+        nav .logo{
+             font-size: 20px;
+             margin: 0px 10px;
+         }
+         @media(max-width:270px){
+            nav .logo{
+                 font-size: 15px;
+                 margin: 0px 5px;
+             }
+     }
+     
+    }
+}
+}
